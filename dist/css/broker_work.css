@@ -1,0 +1,754 @@
+@charset "UTF-8";
+/*首页的css*/
+/*容器宽度*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  overflow-x: hidden;
+  /*始终不显示x方向的滚动条*/
+}
+
+/*自定义滚动条*/
+.broker_warp {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 300;
+  /*定义滚动条轨道 内阴影+圆角*/
+  /*定义滑块 内阴影+圆角*/
+}
+
+.broker_warp::-webkit-scrollbar {
+  width: 16px;
+}
+
+.broker_warp::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.broker_warp::-webkit-scrollbar-thumb {
+  background-color: #999999;
+}
+
+/*首页*/
+.broker_warp {
+  /*头部*/
+  /*选择*/
+  /*MT5*/
+  /*机构*/
+  /*底部*/
+}
+
+.broker_warp .broker_header {
+  width: 100%;
+  /*导航条*/
+  /*banner*/
+}
+
+.broker_warp .broker_header .nav_bar {
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#1e1e4b), to(#22285a));
+  background: linear-gradient(-90deg, #1e1e4b, #22285a);
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+
+.broker_warp .broker_header .nav_bar .container {
+  height: 80px;
+}
+
+.broker_warp .broker_header .nav_bar .container .logo {
+  float: left;
+  width: 145px;
+  height: 40px;
+  background: url("../images/logo/home_logo1.png") no-repeat;
+  text-indent: -9999px;
+  margin-top: 20px;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav {
+  float: right;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > li {
+  height: 80px;
+  padding: 0 35px;
+  float: left;
+  line-height: 80px;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > li > a > span {
+  color: #7C86C1;
+  display: block;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > li > a.active span {
+  color: white;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > li:hover span {
+  color: white;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product {
+  width: 102px;
+  padding: 0;
+  text-align: center;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product .content_triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+  margin-top: -24px;
+  margin-left: 41px;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product .nav_product_content {
+  display: block;
+  width: 200px;
+  background-color: white;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  z-index: 200;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product .nav_product_content > a {
+  line-height: 26px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #7C86C1;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product .nav_product_content > a:hover {
+  color: #313BFF;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product .nav_product_content > a:nth-child(2) {
+  color: #313BFF;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product:hover .content_triangle {
+  display: block;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav .nav_product:hover .nav_product_content {
+  display: block;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > .nav_language_sel {
+  width: 75px;
+  height: 80px;
+  background-color: #1E1E4B;
+  color: #7C86C1;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > .nav_language_sel:hover {
+  color: white;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > .nav_language_sel > option {
+  background-color: #1E1E4B;
+}
+
+.broker_warp .broker_header .nav_bar .container .nav > .nav_language_sel > option:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.broker_warp .broker_header .broker_banner {
+  width: 100%;
+  background: url("../images/bg/home_BW_bg.png") no-repeat;
+  margin-top: 79px;
+}
+
+.broker_warp .broker_header .broker_banner .container {
+  height: 671px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content {
+  height: 229px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_h2 {
+  font-size: 48px;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: white;
+  line-height: 41px;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_h3 {
+  font-size: 24px;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: white;
+  line-height: 24px;
+  margin-top: 38px;
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_btn {
+  width: 200px;
+  height: 60px;
+  background: #44e1df;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_btn > span {
+  font-size: 14px;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: #fefeff;
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_btn .btn_arrows {
+  width: 48px;
+  height: 48px;
+  background: #63faf9;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 26px;
+  margin-right: -6px;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_btn:hover > span {
+  color: #1E1E4B;
+}
+
+.broker_warp .broker_header .broker_banner .container .banner_content .content_btn:hover .btn_arrows {
+  color: #1E1E4B;
+}
+
+.broker_warp .broker_choice {
+  width: 100%;
+  background-color: #F6F6FF;
+}
+
+.broker_warp .broker_choice .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.broker_warp .broker_choice .container .content_title {
+  font-size: 24px;
+  font-family: Adobe Heiti Std R;
+  font-weight: bold;
+  color: #1e1e4b;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 29px;
+}
+
+.broker_warp .broker_choice .container .choice_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -webkit-box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
+          box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
+  border-radius: 8px;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body {
+  width: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item {
+  width: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item .item_img {
+  width: 120px;
+  height: 120px;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item .item_detail {
+  width: 195px;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item .item_detail .detail_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e1e4b;
+  line-height: 41px;
+  white-space: nowrap;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item .item_detail .detail_text {
+  font-size: 14px;
+  color: #9D9CAA;
+  line-height: 24px;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item:first-child .item_img {
+  background: url("../images/icon/home_BW_icon_dj.png") no-repeat;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item:nth-child(2) .item_img {
+  background: url("../images/icon/home_bw_icon_wm.png") no-repeat;
+}
+
+.broker_warp .broker_choice .container .choice_tab .tab_body .body_item:nth-child(3) .item_img {
+  background: url("../images/icon/home_bw_icon_dcb.png") no-repeat;
+}
+
+.broker_warp .broker_mt5 {
+  /*有背景的*/
+  /*没有背景的*/
+  /*直客、代理在线一站式管理*/
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg {
+  height: 812px;
+  background: url("../images/bg/home_bw_bg2.png") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg .have_bg_content {
+  width: 898px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg .have_bg_content .content_img {
+  width: 421px;
+  height: 266px;
+  background: url("../images/icon/home_icon_MT5_EA.png") no-repeat center;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg .have_bg_content .content_detail {
+  width: 898px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg .have_bg_content .content_detail .detail_title {
+  font-size: 24px;
+  color: #7C86C1;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg .have_bg_content .content_detail > p {
+  font-size: 14px;
+  color: white;
+  line-height: 28px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg:nth-child(3) .have_bg_content .content_img {
+  width: 513px;
+  height: 267px;
+  background: url("../images/icon/home_icon_MT5_cl.png") no-repeat center;
+}
+
+.broker_warp .broker_mt5 .mt5_have_bg:nth-child(5) .have_bg_content .content_img {
+  width: 267px;
+  height: 234px;
+  background: url("../images/icon/home_icon_MT5_yd.png") no-repeat;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg {
+  height: 734px;
+  background-color: #F6F6FF;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container {
+  padding-top: 170px;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container .without_bg_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 170px;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container .without_bg_content .content_img {
+  width: 283px;
+  height: 279px;
+  background: url("../images/icon/home_icon_mt5.png") no-repeat;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container .without_bg_content .content_detail {
+  width: 898px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container .without_bg_content .content_detail .detail_title {
+  font-size: 24px;
+  color: #1E1E4B;
+  font-weight: bold;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg .container .without_bg_content .content_detail > p {
+  font-size: 14px;
+  color: #9D9CAA;
+  line-height: 28px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.broker_warp .broker_mt5 .mt5_without_bg:nth-child(5) .container .without_bg_content .content_img {
+  width: 290px;
+  height: 278px;
+  background: url("../images/icon/home_icon_MT5_yh.png") no-repeat;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop {
+  height: 745px;
+  background: url("../images/bg/home_bw_bg4.png") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content {
+  width: 1200px;
+  background: white;
+  -webkit-box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
+          box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
+  opacity: 0.85;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail {
+  width: 895px;
+  font-size: 24px;
+  font-family: Adobe Heiti Std R;
+  font-weight: bold;
+  color: #1e1e4b;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_text {
+  width: 895px;
+  margin-bottom: 60px;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_text .text {
+  width: 895px;
+  text-align: center;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_text .text .text_title {
+  font-size: 24px;
+  color: #1E1E4B;
+  font-weight: bold;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_text .text > p {
+  font-size: 14px;
+  color: #9D9CAA;
+  line-height: 28px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_btn {
+  width: 200px;
+  height: 60px;
+  background: #44e1df;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_btn > span {
+  font-size: 14px;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: #fefeff;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_btn .btn_arrows {
+  width: 48px;
+  height: 48px;
+  background: #63faf9;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 26px;
+  margin-right: -6px;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_btn:hover > span {
+  color: #1E1E4B;
+}
+
+.broker_warp .broker_mt5 .mt5_one_stop .one_stop_content .content_detail .detail_btn:hover .btn_arrows {
+  color: #1E1E4B;
+}
+
+.broker_warp .broker_organization {
+  height: 494px;
+  background: url("../images/bg/home_bg4.png") no-repeat;
+}
+
+.broker_warp .broker_organization .container {
+  padding-top: 170px;
+}
+
+.broker_warp .broker_organization .container .organization_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_title {
+  font-size: 36px;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: white;
+  line-height: 41px;
+  margin-bottom: 60px;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_btn {
+  width: 200px;
+  height: 60px;
+  background: #44e1df;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_btn > span {
+  font-size: 14px;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: #fefeff;
+  line-height: 24px;
+  margin-left: 30px;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_btn .btn_arrows {
+  width: 48px;
+  height: 48px;
+  background: #63faf9;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 26px;
+  margin-right: -12px;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_btn:hover > span {
+  color: #1E1E4B;
+}
+
+.broker_warp .broker_organization .container .organization_content .content_btn:hover .btn_arrows {
+  color: #1E1E4B;
+}
+
+.broker_warp .footer {
+  height: 186px;
+  background: #121238;
+}
+
+.broker_warp .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.broker_warp .footer .container .footer_main {
+  width: 100%;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.broker_warp .footer .container .footer_main .main_logo {
+  width: 145px;
+  height: 40px;
+  background: url("../images/logo/home_footer_logo.png") no-repeat;
+}
+
+.broker_warp .footer .container .footer_main .main_item .item_text {
+  line-height: 24px;
+  color: #7C86C1;
+}
+
+.broker_warp .footer .container .footer_main .main_item .item_text:hover {
+  color: white;
+}
+
+.broker_warp .footer .container .footer_main .main_item .address {
+  color: #9D9CAA;
+}
