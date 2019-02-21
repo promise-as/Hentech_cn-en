@@ -38,8 +38,8 @@ gulp.task('minifyjs', function () {
     .pipe(gulp.dest('build/js'))// 将gulp内存中的数据流输出指定目录下
     .pipe($.concat('built.js'))
     .pipe(gulp.dest('./build/js'))
-    .pipe($.uglify())  // 压缩js代码
-    .pipe($.rename('dist.min.js')) // 重命名js文件
+    // .pipe($.uglify())  // 压缩js代码
+    // .pipe($.rename('dist.min.js')) // 重命名js文件
     .pipe(gulp.dest('./dist/js'))
     .pipe($.livereload()) // 热更新/热加载
 })
