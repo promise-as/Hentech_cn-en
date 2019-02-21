@@ -188,16 +188,9 @@
   marker.addEventListener("onmouseover", function () { // 鼠标移入
     map.openInfoWindow(infoWindow, point) //开启信息窗口
   })
-  //添加地图类型控件
-  /*map.addControl(new BMap.MapTypeControl({
-    mapTypes: [
-      BMAP_NORMAL_MAP,
-      BMAP_HYBRID_MAP
-    ]
-  }))*/
   map.setCurrentCity("深圳")       // 设置地图显示的城市 此项是必须设置的
   map.enableScrollWheelZoom()     //开启鼠标滚轮缩放
   map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
 </script>
 
-<script src="js/dist.min.js"></script>
+<script src="js/built.js"></script>
