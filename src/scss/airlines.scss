@@ -1,310 +1,237 @@
-/*首页的css*/
-/*容器宽度*/
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  //border: 1px solid pink;
-}
+/*客服外包的css*/
 
-body {
-  overflow-x: hidden; /*始终不显示x方向的滚动条*/
-}
-
-/*自定义滚动条*/
-.airlines_warp {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 300;
-  &::-webkit-scrollbar {
-    width: 16px;
-    //z-index: 300;
-  }
-  /*定义滚动条轨道 内阴影+圆角*/
-  &::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-  /*定义滑块 内阴影+圆角*/
-  &::-webkit-scrollbar-thumb {
-    background-color: #999999;
-  }
-}
-
-/*首页*/
-.airlines_warp {
-  /*头部*/
-  .airlines_header {
+/*头部*/
+.airlines_header {
+  width: 100%;
+  /*导航条*/
+  .nav_bar {
     width: 100%;
-    /*导航条*/
-    .nav_bar {
-      width: 100%;
-      background: linear-gradient(-90deg, rgba(30, 30, 75, 1), rgba(34, 40, 90, 1));
-      position: fixed;
-      top: 0;
-      z-index: 200;
-      //border: 1px solid #000;
-      .container {
+    background: linear-gradient(-90deg, rgba(30, 30, 75, 1), rgba(34, 40, 90, 1));
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    //border: 1px solid #000;
+    .container {
+      //display: flex;
+      //justify-content: space-between;
+      height: 80px;
+      .logo {
         //display: flex;
-        //justify-content: space-between;
-        height: 80px;
-        .logo {
+        //justify-content: center;
+        //align-items: center;
+        float: left;
+        width: 145px;
+        height: 40px;
+        //border: 1px solid red;
+        background: url("../images/logo/home_logo1.png") no-repeat;
+        text-indent: -9999px;
+        margin-top: 20px;
+      }
+      .nav {
+        //border: 1px solid red;
+        //display: flex;
+        //align-items: center;
+        float: right;
+        > li {
+          //display: block;
+          height: 80px;
+          padding: 0 35px;
+          //border: 1px solid red;
           //display: flex;
           //justify-content: center;
           //align-items: center;
           float: left;
-          width: 145px;
-          height: 40px;
-          //border: 1px solid red;
-          background: url("../images/logo/home_logo1.png") no-repeat;
-          text-indent: -9999px;
-          margin-top: 20px;
-        }
-        .nav {
-          //border: 1px solid red;
-          //display: flex;
-          //align-items: center;
-          float: right;
-          > li {
-            //display: block;
-            height: 80px;
-            padding: 0 35px;
-            //border: 1px solid red;
-            //display: flex;
-            //justify-content: center;
-            //align-items: center;
-            float: left;
-            line-height: 80px;
-            > a {
-              //border: 1px solid white;
-              //height: 60px;
-              > span {
-                color: #7C86C1;
-                display: block;
-              }
-              &.active {
-                span {
-                  color: white;
-                }
-              }
+          line-height: 80px;
+          > a {
+            //border: 1px solid white;
+            //height: 60px;
+            > span {
+              color: #7C86C1;
+              display: block;
             }
-            &:hover {
+            &.active {
               span {
                 color: white;
               }
             }
-
+          }
+          &:hover {
+            span {
+              color: white;
+            }
           }
 
-          .nav_product{
-            width: 102px;
+        }
+
+        .nav_product{
+          width: 102px;
+          //border: 1px solid red;
+          padding: 0;
+          text-align: center;
+          //line-height: 0px;
+          //margin-top: 20px;
+          .content_triangle{
+            display: none;
+            //width: 20px;
+            //height: 20px;
+            //background-color: red;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid white;
+            margin-top: -24px;
+            margin-left: 41px;
+          }
+          .nav_product_content{
+            display: none;
+            width: 200px;
+            //height: 113px;
+            background-color: white;
+            border-radius:4px;
             //border: 1px solid red;
-            padding: 0;
-            text-align: center;
-            //line-height: 0px;
-            //margin-top: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 20px;
+            z-index: 200;
+            > a{
+              //height: 37px;
+              //border: 1px solid blue;
+              line-height: 26px;
+              text-align: left;
+              padding-left: 10px;
+              padding-right: 10px;
+              color: #7C86C1;
+              &:hover{
+                color: #313BFF;
+              }
+              &:first-child{
+                color: #313BFF;
+              }
+            }
+          }
+          &:hover{
             .content_triangle{
-              display: none;
-              //width: 20px;
-              //height: 20px;
-              //background-color: red;
-              width: 0;
-              height: 0;
-              border-left: 10px solid transparent;
-              border-right: 10px solid transparent;
-              border-bottom: 15px solid white;
-              margin-top: -24px;
-              margin-left: 41px;
+              display: block;
             }
             .nav_product_content{
-              display: none;
-              width: 200px;
-              //height: 113px;
-              background-color: white;
-              border-radius:4px;
-              //border: 1px solid red;
-              padding-top: 5px;
-              padding-bottom: 5px;
-              margin-left: 20px;
-              z-index: 200;
-              > a{
-                //height: 37px;
-                //border: 1px solid blue;
-                line-height: 26px;
-                text-align: left;
-                padding-left: 10px;
-                padding-right: 10px;
-                color: #7C86C1;
-                &:hover{
-                  color: #313BFF;
-                }
-                &:first-child{
-                  color: #313BFF;
-                }
-              }
-            }
-            &:hover{
-              .content_triangle{
-                display: block;
-              }
-              .nav_product_content{
-                display: block;
-              }
+              display: block;
             }
           }
+        }
 
-          > .nav_language_sel {
-            width: 75px;
-            height: 80px;
-            //line-height: 80px;
-            //border: 1px solid green;
+        > .nav_language_sel {
+          width: 75px;
+          height: 80px;
+          //line-height: 80px;
+          //border: 1px solid green;
+          background-color: #1E1E4B;
+          color: #7C86C1;
+          font-size: 16px;
+          //cursor: pointer;
+          border: 0;
+          outline: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          &:hover {
+            color: white;
+          }
+          > option {
             background-color: #1E1E4B;
-            color: #7C86C1;
-            font-size: 16px;
-            //cursor: pointer;
-            border: 0;
-            outline: none;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             &:hover {
-              color: white;
-            }
-            > option {
-              background-color: #1E1E4B;
-              &:hover {
-                background-color: red;
-                color: #fff;
-              }
+              background-color: red;
+              color: #fff;
             }
           }
         }
       }
     }
-    /*banner*/
-    .airlines_banner {
-      width: 100%;
-      background: url("../images/bg/home_kf_bg.png") no-repeat;
-      margin-top: 79px;
-      .container {
-        //border: 1px solid blue;
-        height: 671px;
-      }
-    }
   }
-  /*方案*/
-  .airlines_main {
+  /*banner*/
+  .airlines_banner {
     width: 100%;
-    background-color: #F6F6FF;
+    background: url("../images/bg/home_kf_bg.png") no-repeat;
+    margin-top: 79px;
     .container {
-      //border: 1px solid #000;
-      padding-top: 168px;
-      padding-bottom: 170px;
-      .main_h3 {
-        font-size: 36px;
-        font-family: Adobe Heiti Std R;
-        font-weight: bold;
-        color: rgba(30, 30, 75, 1);
-        line-height: 41px;
-        text-align: center;
-        margin-bottom: 100px;
-      }
-      .main_content {
-        //height: 234px;
-        //border: 1px solid #000;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        .content_detail {
-          margin: 90px 151px 90px 102px;
-          //border: 1px solid red;
-          width: 947px;
-          //height: 134px;
-          display: flex;
-          justify-content: space-between;
-          .detail_left {
-            width: 20px;
-            height: 20px;
-            background: rgba(30, 30, 75, 1);
-            border-radius: 50%;
-          }
-          .detail_right {
-            width: 896px;
-            //height: 134px;
-            //border: 1px solid blue;
-            .right_title {
-              font-size: 24px;
-              font-family: Adobe Heiti Std R;
-              font-weight: bold;
-              color: rgba(30, 30, 75, 1);
-              //line-height: 40px;
-              margin-top: -3px;
-            }
-            .right_text {
-              font-size: 14px;
-              color: #9D9CAA;
-              line-height: 24px;
-              margin-top: 10px;
-            }
-          }
-        }
-        &:hover {
-          background: linear-gradient(-90deg, rgba(30, 30, 75, 1), rgba(49, 57, 123, 1));
-          .content_detail{
-            .detail_left{
-              background:rgba(124,134,193,1);
-            }
-            .detail_right{
-              .right_title{
-                color: #7C86C1;
-              }
-              .right_text{
-                color: white;
-              }
-            }
-          }
-        }
-      }
+      //border: 1px solid blue;
+      height: 671px;
     }
   }
-  /*底部*/
-  .footer {
-    height: 186px;
-    background: rgba(18, 18, 56, 1);
-    .container {
-      //border: 1px solid white;
+}
+/*方案*/
+.airlines_main {
+  width: 100%;
+  background-color: #F6F6FF;
+  .container {
+    //border: 1px solid #000;
+    padding-top: 168px;
+    padding-bottom: 170px;
+    .main_h3 {
+      font-size: 36px;
+      font-family: Adobe Heiti Std R;
+      font-weight: bold;
+      color: rgba(30, 30, 75, 1);
+      line-height: 41px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .main_content {
+      //height: 234px;
+      //border: 1px solid #000;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 4px 7px 1px rgba(70, 80, 225, 0.08);
+      border-radius: 8px;
       display: flex;
-      justify-content: space-between;
-      .footer_main {
-        width: 100%;
-        //height: 40px;
+      align-items: center;
+      margin-top: 30px;
+      .content_detail {
+        margin: 90px 151px 90px 102px;
         //border: 1px solid red;
-        margin-top: 63px;
+        width: 947px;
+        //height: 134px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        .main_logo {
-          width: 145px;
-          height: 40px;
-          background: url("../images/logo/home_footer_logo.png") no-repeat;
-          //border: 1px solid white;
+        .detail_left {
+          width: 20px;
+          height: 20px;
+          background: rgba(30, 30, 75, 1);
+          border-radius: 50%;
         }
-        .main_item {
+        .detail_right {
+          width: 896px;
+          //height: 134px;
           //border: 1px solid blue;
-          .item_text {
+          .right_title {
+            font-size: 24px;
+            font-family: Adobe Heiti Std R;
+            font-weight: bold;
+            color: rgba(30, 30, 75, 1);
+            //line-height: 40px;
+            margin-top: -3px;
+          }
+          .right_text {
+            font-size: 14px;
+            color: #9D9CAA;
             line-height: 24px;
-            color: #7C86C1;
-            &:hover {
+            margin-top: 10px;
+          }
+        }
+      }
+      &:hover {
+        background: linear-gradient(-90deg, rgba(30, 30, 75, 1), rgba(49, 57, 123, 1));
+        .content_detail{
+          .detail_left{
+            background:rgba(124,134,193,1);
+          }
+          .detail_right{
+            .right_title{
+              color: #7C86C1;
+            }
+            .right_text{
               color: white;
             }
-          }
-          .address {
-            color: #9D9CAA;
           }
         }
       }
     }
   }
 }
-

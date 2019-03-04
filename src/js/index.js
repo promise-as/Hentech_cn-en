@@ -10,8 +10,8 @@ window.onload = function () {
       selUrl.selectedIndex = 0;
       selUrl.blur();
     }
-  }
-}
+  };
+};
 
 
 
